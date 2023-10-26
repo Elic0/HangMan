@@ -7,5 +7,5 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property.RootNamespace = Banko
-build_property.ProjectDir = E:\Banko\Banko\
+build_property.RootNamespace = HangMan
+build_property.ProjectDir = E:\HangMan\HangMan\HangMan\

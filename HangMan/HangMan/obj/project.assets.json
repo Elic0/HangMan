@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\Banko\\Banko\\Banko.csproj",
-      "projectName": "Banko",
-      "projectPath": "E:\\Banko\\Banko\\Banko.csproj",
+      "projectUniqueName": "E:\\HangMan\\HangMan\\HangMan\\HangMan.csproj",
+      "projectName": "HangMan",
+      "projectPath": "E:\\HangMan\\HangMan\\HangMan\\HangMan.csproj",
       "packagesPath": "C:\\Users\\Elic0\\.nuget\\packages\\",
-      "outputPath": "E:\\Banko\\Banko\\obj\\",
+      "outputPath": "E:\\HangMan\\HangMan\\HangMan\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Elic0\\AppData\\Roaming\\NuGet\\NuGet.Config",
