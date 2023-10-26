@@ -48,7 +48,7 @@ class HangmanGame
 
             Console.WriteLine("Word: " + new string(guessedWord));
             Console.WriteLine("Guessed letters: " + guessedLetters);
-            Console.WriteLine("Attempts remaining: " + attempts);
+            DrawHangman(6 - attempts);
 
             Console.Write("Guess a letter or a space: ");
             char guess = Char.ToLower(Console.ReadKey().KeyChar);
@@ -99,10 +99,26 @@ class HangmanGame
         if (attempts == 0)
         {
             Console.Clear(); // Clear the console
+            DrawHangman(6); // Show the complete hangman figure
             Console.WriteLine("Sorry, you ran out of attempts. The word was: " + secretWord);
         }
 
         Console.WriteLine("Thanks for playing!");
+    }
+
+    static void DrawHangman(int incorrectGuesses)
+    {
+        string[] hangmanFigures = {
+            " ____\n |  |\n |   \n |   \n |   \n_|_______",
+            " ____\n |  |\n |  O\n |   \n |   \n_|_______",
+            " ____\n |  |\n |  O\n |  |\n |   \n_|_______",
+            " ____\n |  |\n |  O\n | /|\n |   \n_|_______",
+            " ____\n |  |\n |  O\n | /|\\ \n |   \n_|_______",
+            " ____\n |  |\n |  O\n | /|\\ \n | /   \n_|_______",
+            " ____\n |  |\n |  O\n | /|\\ \n | / \\ \n_|_______"
+        };
+
+        Console.WriteLine(hangmanFigures[incorrectGuesses]);
     }
 
     static bool IsAllLettersAndSpaces(string str)
